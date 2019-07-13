@@ -23,3 +23,5 @@ npm init
 npm i mongo
 
 npm i express-session
+
+Sachant qu'il y'aura deux collections (connexion.json et dinosaures.json) pour pouvoir connecter à la base de donnée MongoDB "Dinosaure"
