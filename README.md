@@ -17,6 +17,9 @@ Dépôt sur GitHub apprécié. Et si tu as des questions nous sommes la pour y r
 Correcction :
 
 Vous devez installer également les modules nodejs suivants:
+
 npm init
+
 npm i mongo
+
 npm i express-session
