@@ -1,0 +1,13 @@
+include parts/head.pug
+.container
+    include parts/header.pug
+    section
+        form(action="/admin/check-dinosaures" method="post" class="col-12")
+            .form-group
+                label(for="titre") Famille
+                input(type="text" name="titre" class="form-control")
+            .form-group
+                label(for="contenu") Race de dinosaure
+                textarea(name="contenu" class="form-control")
+            button(type="submit" class="btn btn-primary col-2 offset-10") Enregistrer
+    include parts/footer.pug

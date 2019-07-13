@@ -1,0 +1,15 @@
+include parts/head.pug
+.container
+    include parts/header.pug
+    section
+        form(action="/admin/change-dinosaures" method="post" class="col-12")
+            .form-group
+                label(for="titre") Famille
+                input(type="text" name="titre" class="form-control" value=docs[0].famille)
+            .form-group
+                label(for="contenu") Race de dinosaure
+                textarea(name="contenu" class="form-control")=docs[0].contenu
+            input(type='hidden' name="id" value=docs[0]._id)
+            button(type="submit" class="btn btn-primary col-2 offset-10") Modifier
+            button(type="submit" class="btn btn-primary col-2 offset-10") Supprimer
+    include parts/footer.pug

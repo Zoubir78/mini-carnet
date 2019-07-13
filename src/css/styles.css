@@ -1,0 +1,25 @@
+body, html {
+    margin: 10 10 0 0;
+    padding: 10 10 0 0;
+    background-color: #e4ee6f;
+    cursor: auto;
+    opacity: 0.8;
+}
+
+#msg {
+    left: 40%;
+    position: fixed;
+    text-align: center;
+    top: 2%;
+    width: 30%;
+    z-index: 1;
+}
+
+#copyright {
+    color: white;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #555252;
+    border-radius: .5 .5 .5 .5;
+    text-align: center; 
+}

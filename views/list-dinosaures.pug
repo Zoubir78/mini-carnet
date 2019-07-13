@@ -1,0 +1,9 @@
+include parts/head.pug
+.container
+    include parts/header.pug
+    section
+        each dinosaure in docs
+            p #{dinosaure.famille} - 
+                a(href='/admin/modify-dinosaure/' + dinosaure._id) Modifier 
+                a(href='/admin/modify-dinosaure/' + dinosaure._id) Supprimer
+    include parts/footer.pug

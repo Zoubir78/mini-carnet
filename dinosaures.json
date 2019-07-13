@@ -1,0 +1,3 @@
+{"_id":{"$oid":"56054c499a8c489c298df346"},"age":160,"famille":"Mégalosaure","race":"Parasaurolophus","nourriture":"L'herbe"}
+{"_id":{"$oid":"56054ccd9a8c489c298df347"},"age":180,"famille":"Albertosaure","race":"Charonosaurus","nourriture":"L'herbe"}
+{"_id":{"$oid":"56054cde9a8c489c298df348"},"age":200,"famille":"Ankylosaure","race":"Sauropodomorpha","nourriture":"L'herbe"}

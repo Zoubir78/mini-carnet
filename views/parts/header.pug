@@ -1,0 +1,11 @@
+- var listMenu = [['Acccueil','/','all','3'],['Se connecter','/connect','no','3'],['Se déconnecter','/disconnect','yes','3'],['Administration','/admin/','yes','2'],['Ajout d\'un dinosaure','/admin/add-dinosaures','yes','2'],['Liste des dinosaures','/admin/list-dinosaures','yes','2']]
+if msg
+    p(id='msg' class='alert alert-' + msg.class)=msg.text
+header
+    h1= title
+    nav.navbar
+        ul.nav
+            each entry in listMenu
+                if (entry[2] == 'all' || entry[2] == 'no' && !session.identifiant || entry[2] == 'yes' && session.identifiant && session.niveau <= entry[3])
+                    li.nav-item
+                    a(href=entry[1] class="nav-link")=entry[0]

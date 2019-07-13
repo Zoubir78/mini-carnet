@@ -1,0 +1,13 @@
+include parts/head.pug
+.container
+    include parts/header.pug
+    section
+        form(action="/check" method="get" class="col-12")
+            .form-group
+                label(for="identifiant") Pseudonyme
+                input(type="text" name="identifiant" class="form-control")
+            .form-group
+                label(for="mdp") Mot de passe
+                input(type="password" name="mdp" class="form-control")
+            button(type="submit" class="btn btn-primary col-2 offset-0") Login
+    include parts/footer.pug
